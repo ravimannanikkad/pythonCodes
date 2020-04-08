@@ -1,62 +1,32 @@
 
 # Writen By Ravi Damodaran #
-# Python Number Tutorial
-# Working with Number #
+# Python Lists Tutorial
+# Working with Lists #
 
-from math import *
+#creating a list of friends here
+friends =["ammu","Appu","Ramu","June","Mahesh","Ravi","Aravind"]
 
+# printing a list here
+print("List of friends",end=": ")
+print(friends)
 
-#1 Printing a Number
-print("1", end =": ")
-print(100)
+#printing the contents of list using index
+print("The friend on index 0",end=": ")
+print(friends[0])
 
-#2 Printing a Decimal Number
-print("2", end =": ")
-print(20148.258)
+#printing the contents of list using negative index
+print("The friend on index -1",end=": ")
+print(friends[-1])
 
-#3 Printing a negative Number
-print("3", end =": ")
-print(-20148.258)
+#printing one part of the contents of list
+print("The part of contents in the list from index 1",end=": ")
+print(friends[1:])
 
+#printing one portion of the contents of list
+print("The portion of contents in the list from index 1 to 4",end=": ")
+print(friends[1:4])
 
-#4 Printing a number from variable
-my_num=52
-print("4", end =": ")
-print(my_num)
-
-#5 Converting a number to string
-print("5", end =": ")
-print(str(my_num)+ " is My fav number")
-
-#6 Absolute value of number
-my_num2= -98
-print("6", end =": ")
-print(abs(my_num2))
-
-#7 finding power of a number ie here it will be 52^5
-print("7", end =": ")
-print(pow(my_num,5))
-
-#9 Finding the Largest number of 12547869 and 1256879
-print("8", end =": ")
-print(max(12547869,1256879))
-
-#8 Finding the smallest number of 12547869 and 1256879
-print("9", end =": ")
-print(min(12547869,1256879))
-
-#10 rounding the number 3.84
-print("10", end =": ")
-print(round(3.84))
-
-#11 chopping the decimal points
-print("11", end =": ")
-print(floor(3.85))
-
-#12 chopping the decimal points and round up to the next number
-print("12", end =": ")
-print(ceil(3.15))
-
-#13 Square root of a number
-print("13", end =": ")
-print(sqrt(36))
+#Modifying values inside list
+print("Modify value of Appu to Raman")
+friends[1]="Raman"
+print(friends)
