@@ -1,5 +1,6 @@
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Writen By Ravi Damodaran #
 # Python Number Tutorial
 # Working with Number #
@@ -7,9 +8,14 @@
 character_name = "Joseph"
 character_age = "70"
 >>>>>>> parent of e2ad56d... Working with Strings
+=======
+character_name = "Joseph"
+character_age = "70"
+>>>>>>> parent of c7bf1af... Working with Strings
 
 from math import *
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 #1 Printing a Number
@@ -67,8 +73,13 @@ print(ceil(3.15))
 print("13", end =": ")
 print(sqrt(36))
 =======
+=======
+>>>>>>> parent of c7bf1af... Working with Strings
 print("There was a man named "+ character_name +",")
 print("he was "+ character_age + " years old.")
 print("He really likes the name  "+ character_name +",")
 print("but didn't like being " + character_age + ".")
+<<<<<<< HEAD
 >>>>>>> parent of e2ad56d... Working with Strings
+=======
+>>>>>>> parent of c7bf1af... Working with Strings
