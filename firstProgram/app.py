@@ -1,10 +1,16 @@
 
+<<<<<<< HEAD
 # Writen By Ravi Damodaran #
 # Python Number Tutorial
 # Working with Number #
+=======
+character_name = "Joseph"
+character_age = "70"
+>>>>>>> parent of e2ad56d... Working with Strings
 
 from math import *
 
+<<<<<<< HEAD
 
 #1 Printing a Number
 print("1", end =": ")
@@ -60,3 +66,9 @@ print(ceil(3.15))
 #13 Square root of a number
 print("13", end =": ")
 print(sqrt(36))
+=======
+print("There was a man named "+ character_name +",")
+print("he was "+ character_age + " years old.")
+print("He really likes the name  "+ character_name +",")
+print("but didn't like being " + character_age + ".")
+>>>>>>> parent of e2ad56d... Working with Strings
