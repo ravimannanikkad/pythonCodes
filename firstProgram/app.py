@@ -1,31 +1,57 @@
+#*********************************#
 # Writen By Ravi Damodaran #
-# Python Functions Tutorial
-# Working with Functions #
-
-# Simple Function
-def say_hi():
-    print("Hello User")
+# Python If statements Tutorial
+# Working with If statement #
+#*********************************#
 
 
-# Function with input Parameters
-def say_me(name, age):
-    print("Hello " + name + ", You are "+ age+ " years old")
+#########################################
+# Basics of python if and else stements#
+#########################################
+is_male =False
+is_tall=True
 
-def calculate_multiples(num):
-    res1=num*num
-    res2=res1*num
-    #returning 2 results
-    return res1 ,res2
+#if statement with one condition
+if is_male :
+    print("You are a male ")
+else:
+    print("You are not a male ")
 
 
-# Calling a simple function
-say_hi()
-# Calling a function with input parameters
-say_me("Ravi","31")
-# Calling a function with input parameters and receiving value
-print("The square of the number 4 is ",end= ": ")
-#getting results to two variables
-result1,result2 =calculate_multiples(4)
-print(result1)
-print("The cube of the number 4 is ",end= ": ")
-print(result2)
+#If statement with 2 conditions OR
+if is_male or is_tall:
+    print("You are a male or tall or both")
+else:
+    print("You are neither male nor tall ")
+
+#If statement with 2 conditions AND
+if is_male and is_tall:
+    print("You are a male and tall ")
+else:
+    print("You are either male or tall,but not both ")
+
+#If statement with 2 conditions and elif
+if is_male and is_tall:
+    print("You are a male and tall ")
+elif is_male and not (is_tall):
+    print("You are a short male")
+elif not (is_male) and is_tall:
+    print("You are not a male but tall")
+else:
+    print("You are not male not tall ")
+
+####################################
+# Comparison inside if statements  #
+####################################
+
+# A function to check the largest number
+def max_num(num1,num2,num3):
+    if num1 >= num2 and num1 >= num3:
+        return num1
+    elif num2 >= num1 and num2 >=num3:
+        return num2
+    else:
+        return num3
+#Print the largest number
+print("The largest number among the numebers 4,5,6 is:", end=" ")
+print(max_num(4,5,6))
