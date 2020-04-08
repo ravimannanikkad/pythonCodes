@@ -1,34 +1,46 @@
 
 #***************************#
 # Writen By Ravi Damodaran  #
-# Python Dictionary Tutorial#
-# Working with Dictionary   #
+# Python while loop Tutorial#
+# Working with while loop   #
 #***************************#
 
+# i =1
+#
+# while i<=10:
+#     print(i)
+#     i+=1
+#
+# print("Done with loop")
 
-monthConversions = {
-    #Key : Value
-    "Jan": "January",
-    "Feb": "February",
-    "Mar": "March",
-    "Apr": "April",
-    "May": "May",
-    "Jun": "June",
-    "Jul": "July",
-    "Aug": "August",
-    "Sep": "September",
-    "Oct": "October",
-    "Nov": "November",
-    "Dec": "December",
-}
-# Method 1 to get value from dictionary
-print("Get the value of Oct", end= ":= ")
-print(monthConversions["Oct"])
+secret_word="ravi"
+guess=""
+guess_count=0
+guess_limit=3
+out_of_guesses=False
+while secret_word !=guess and not(out_of_guesses):
+    if guess_count<guess_limit:
+        guess=input("Enter your guess: ")
+        guess_count+=1
+    else:
+        out_of_guesses=True
 
-# Method 2 to get value from dictionary
-print("Get the value of Mar", end= ":= ")
-print(monthConversions.get("Mar","Not a valid Key"))
+    if guess != secret_word:
+        print("Sorry Wrong Guess")
+if out_of_guesses:
+    print("You lost the game")
+else:
+    print("you win !")
 
-# Method 2 to get value from dictionary when there is not that value is present
-print("Get the value of Ravi", end= ":= ")
-print(monthConversions.get("Ravi","Not a valid Key"))
+
+
+
+
+
+
+
+
+
+
+
+
