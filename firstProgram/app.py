@@ -1,7 +1,7 @@
 
 # Writen By Ravi Damodaran #
 # Python Number Tutorial
-# Working with Number #
+# Working with Numbers #
 
 from math import *
 
@@ -60,3 +60,4 @@ print(ceil(3.15))
 #13 Square root of a number
 print("13", end =": ")
 print(sqrt(36))
+
