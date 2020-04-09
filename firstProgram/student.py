@@ -1,7 +1,12 @@
 class Student:
-
-    def __init__(self,name,major,gpa,is_on_probation):
+   # Defenition of atributes of the class
+   def __init__(self,name,major,gpa):
         self.name = name
         self.major =major
         self.gpa=gpa
-        self.is_on_probation=is_on_probation
+   # Defining a function for checking if the strudent have a good GPA or not
+   def on_honor_roll(self):
+       if self.gpa >= 3.5:
+           return True
+       else:
+           return False
