@@ -1,85 +1,45 @@
-
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Writen By Ravi Damodaran #
-# Python Number Tutorial
-# Working with Number #
-=======
-character_name = "Joseph"
-character_age = "70"
->>>>>>> parent of e2ad56d... Working with Strings
-=======
-character_name = "Joseph"
-character_age = "70"
->>>>>>> parent of c7bf1af... Working with Strings
+character_age = "70"	# Python String Tutorial
+# Working with Strings #
 
-from math import *
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-#1 Printing a Number
-print("1", end =": ")
-print(100)
 
-#2 Printing a Decimal Number
+print("There was a man named "+ character_name +",")	phrase = "Ravi Mannanikkad"
+print("he was "+ character_age + " years old.")	#1 Printing a Variable 1
+print("He really likes the name  "+ character_name +",")	print("1", end =": ")
+print("but didn't like being " + character_age + ".")	print(phrase)
+#2 String Concantination 2
 print("2", end =": ")
-print(20148.258)
-
-#3 Printing a negative Number
+print(phrase + " is fantastic")
+#3 Using a built in function of strings 3
 print("3", end =": ")
-print(-20148.258)
-
-
-#4 Printing a number from variable
-my_num=52
+print(phrase.upper())
+#4 Checking if the phrase us uppercase or not 4
 print("4", end =": ")
-print(my_num)
+print(phrase.isupper())
 
-#5 Converting a number to string
+#5 Pipelining functions where convert to lower case
+# and check if it is lowercase 5
 print("5", end =": ")
-print(str(my_num)+ " is My fav number")
+print(phrase.lower().islower())
 
-#6 Absolute value of number
-my_num2= -98
+#6 Length of string 6
 print("6", end =": ")
-print(abs(my_num2))
+print(len(phrase))
 
-#7 finding power of a number ie here it will be 52^5
+#7 Fetching a character in string 7
 print("7", end =": ")
-print(pow(my_num,5))
+print(phrase[0])
 
-#9 Finding the Largest number of 12547869 and 1256879
+#8 Getting index of a character (i) from string 8
 print("8", end =": ")
-print(max(12547869,1256879))
+print(phrase.index("i"))
 
-#8 Finding the smallest number of 12547869 and 1256879
+#9 Getting index of a substring (Mannanikkad) from string 9
 print("9", end =": ")
-print(min(12547869,1256879))
+print(phrase.index("Mannanikkad"))
 
-#10 rounding the number 3.84
+#10 Replacing a part of string with another one 10
 print("10", end =": ")
-print(round(3.84))
-
-#11 chopping the decimal points
-print("11", end =": ")
-print(floor(3.85))
-
-#12 chopping the decimal points and round up to the next number
-print("12", end =": ")
-print(ceil(3.15))
-
-#13 Square root of a number
-print("13", end =": ")
-print(sqrt(36))
-=======
-=======
->>>>>>> parent of c7bf1af... Working with Strings
-print("There was a man named "+ character_name +",")
-print("he was "+ character_age + " years old.")
-print("He really likes the name  "+ character_name +",")
-print("but didn't like being " + character_age + ".")
-<<<<<<< HEAD
->>>>>>> parent of e2ad56d... Working with Strings
-=======
->>>>>>> parent of c7bf1af... Working with Strings
+print(phrase.replace("Mannanikkad", "Damodaran"))
