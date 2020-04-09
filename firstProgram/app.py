@@ -1,16 +1,16 @@
 # ************************************#
 # Writen By Ravi Damodaran           #
-# Python Try and Exception           #
-# Working with Try and Exception     #
+# Python File Operations        #
+# Working with file Operations   #
 # ************************************#
 
-# Try is a snippet of code ries to execute and when there
-# is an error occures it catches in the Except. Later the
-# code executes without problem
-try:
-    number = int(input("Enter Number"))
-    print(number)
-except ValueError as err:
-    print(err)
+employee_file=open("employee.txt", "r")
 
-print("Hello World !")
+for i in employee_file.readlines():
+    print(i)
+
+employee_file.close()
+
+employee_file =open("employee.txt", "w")
+employee_file.write("\nAppu idiont - CEO")
+employee_file.close()
