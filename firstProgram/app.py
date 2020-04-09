@@ -1,16 +1,14 @@
 # ************************************#
 # Writen By Ravi Damodaran           #
-# Python File Operations        #
-# Working with file Operations   #
+# Python Classes and Objects       #
+# Working with classes and Objects  #
 # ************************************#
 
-employee_file=open("employee.txt", "r")
+# 1. Creating an own data type
 
-for i in employee_file.readlines():
-    print(i)
+from student import Student
 
-employee_file.close()
+student1 = Student("Ravi","Engineering",3.8,False)
+student2 = Student("Amrita","Business",3.9,True)
 
-employee_file =open("employee.txt", "w")
-employee_file.write("\nAppu idiont - CEO")
-employee_file.close()
+print(student1.is_on_probation)
